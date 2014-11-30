@@ -536,9 +536,9 @@ a {
 
 #deg0 {
 	transform: translateY(-350px);
-	-webkit-transform: transform: translateY(-350px);
-	-moz-transform: transform: translateY(-350px);
-	-ms-transform: transform: translateY(-350px);
+	-webkit-transform: translateY(-350px);
+	-moz-transform: translateY(-350px);
+	-ms-transform: translateY(-350px);
 }
 
 #deg120{
