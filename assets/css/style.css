@@ -1,0 +1,900 @@
+body {
+	/*height: 2500px;*/
+	width: 100%;
+	font-family: "Alegreya Sans";
+	position: absolute;
+	margin: 0px;
+}
+
+/* begin CSS for navigation bar */
+
+#topbar {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-opacity: 0;
+}
+
+#topbar-menu {
+    width: 569px;
+    float: right;
+    top: calc(50% - 29px/2);
+    position: relative;
+}
+
+#logo {
+    color: #53626F;
+	font-size: 66px;
+	font-weight: 900;
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: calc(50% - 79px/2);
+	margin-left: 70px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#at {
+    font-size: 36px;
+    position: relative;
+    bottom: 7px;
+    margin: 0px 2px;
+    color: #fff;
+}
+
+#cal {
+	display: inline-block;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	color: #003262;
+	font-size: 21px;
+	bottom: 8px;
+	position: relative;
+	left: -8px;
+}
+
+.topbar-menu-item {
+    color: rgba(255,255,255,0.75);
+    font-family: "Alegreya Sans";
+    display: inline-block;
+	margin-right: 70px;
+	float: right;
+	font-size: 24px;
+	font-weight: 500;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.topbar-menu-item:hover {
+	color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#topbar.smaller {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99; /*change this if parallax-ing*/
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: rgba(253,181,21,0.85);
+    background-opacity: 1;
+}
+
+#topbar-menu.smaller {
+    width: 569px;
+    float: right;
+    top: calc(50% - 29px/2);
+    position: relative;
+}
+
+#logo.smaller {
+    color: #53626F;
+    font-size: 48px;
+    font-weight: 900;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: calc(50% - 57px/2);
+    margin-left: 70px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.topbar-menu-item.smaller {
+    color: #fff;
+    font-family: "Alegreya Sans";
+    display: inline-block;
+	margin-right: 70px;
+	float: right;
+	font-size: 24px;
+	font-weight: 500;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.topbar-menu-item.smaller:hover {
+	color: rgba(255,255,255,0.5);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#topbar.about {
+	background-color: rgba(0,176,218,0.85);
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#topbar.staff {
+	background-color: rgba(0,178,165,.85);
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#topbar.apply {
+	background-color: rgba(237,078,051,0.85);
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+
+/* end CSS for nav bar */
+
+
+
+/* begin CSS for home section */
+
+.section-parallax {
+	width: 100%;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+#home-wrapper {
+	height: 500px;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-image: url("../../assets/img/home-bg.jpg");
+  	z-index: -4;
+  	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#home-overlay {
+	height: 500px;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-image: url("../../assets/img/home-overlay.png");
+  	opacity: .95;
+  	z-index: -2;
+}
+
+#home-container {
+	z-index: 1;
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	left: calc(50% - 450px);
+	color: #003262;
+	width: 900px;
+}
+
+.home-header {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.home-subheader {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+#home-info {
+	font-size: 18px;
+	font-weight: 300;
+	width: 550px;
+	margin: 15px auto;
+}
+
+#home-button-container {
+	margin-top: 25px;
+}
+
+.home-button {
+	font-size: 24px;
+	font-weight: 700;
+	border: 4px solid #003262;
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #003262;
+}
+
+.home-button:hover {
+	background-color: rgba(255,255,255,0.25);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#donate {
+	text-decoration: none;
+	color: #003262;
+	margin-left: 20px;
+}
+
+/* end CSS for home section */
+
+
+
+/* begin CSS for about section */
+
+.side-header {
+	width: 100px;
+	float: left;
+	font-size: 72px;
+	font-weight: 700;
+}
+
+#about-header {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	position: relative;
+	top: 123px;
+	color: #00B0DA;
+}
+
+#about-info-container {
+	position: absolute;
+	top: 80px;
+}
+
+#about-info {
+	width: 38%;
+	display: inline-block;
+	float: left;
+	color: #53626F;
+	font-weight: 300;
+}
+
+#about-photo-container {
+    height: 310px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	right: -15px;
+}
+
+#about-photo {
+    height: 100%;
+}
+
+
+#about-container {
+    width: 1000px;
+	margin: 0px auto;
+	position: relative;
+	height: 400px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #53626F;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+
+.about-link:hover {
+    color: #00B0DA;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+
+/* end CSS for about section */
+
+
+
+/* begin CSS for staff section */
+
+#staff-wrapper {
+	height: 1300px;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-image: url("../../assets/img/staff-bg.jpg");
+  	z-index: 0;
+  	position: relative;
+  	
+}
+
+#staff-overlay {
+	height: 100%;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-image: url("../../assets/img/staff-overlay.png");
+  	opacity: .95;
+  	z-index: -2;
+  	position: relative;
+  	
+}
+
+#staff-container {
+	z-index: 9;
+	position: absolute;
+	top: 50px;
+	color: #fff;
+	width: 1000px;
+	left: calc(50% - 500px);
+	height: 100%;
+	
+}
+
+#staff-header {
+	opacity: 0.75;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	position: relative;
+	top: 137px;
+	
+}
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+#director-container {
+	width: 720px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#director-header {
+	font-size: 36px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	position: relative;
+	top: 109px;
+	left: 20px;
+	
+}
+
+#director-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	
+}
+
+#director-info {
+	display: inline-block;
+	width: 400px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 30px;
+	
+}
+
+#director-subheader {
+	font-size: 24px;
+	margin-bottom: 15px;
+	
+}
+
+#director-text {
+	font-weight: 100;
+	line-height: 1.5;
+	
+}
+
+#intern-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    z-index: 0;
+    
+}
+
+#intern-header {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+
+#circle-container {
+	width: 850px;
+	height: 850px;
+	margin: 0px auto;
+	position: relative;
+	
+}
+
+.intern-photo {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 999;
+	cursor: pointer;
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+
+.dimmed {
+	opacity: 0.5;
+}
+
+
+#deg0 {
+	transform: translateY(-350px);
+}
+
+#deg120{
+	transform: rotate(120deg) translate(-350px) rotate(-120deg);
+	-webkit-transform: rotate(120deg) translate(-350px) rotate(-120deg);
+	-moz-transform: rotate(120deg) translate(-350px) rotate(-120deg);
+	-ms-transform: rotate(120deg) translate(-350px) rotate(-120deg);
+}
+
+#deg150{
+	transform: rotate(150deg) translate(-350px) rotate(-150deg);
+	-webkit-transform: rotate(150deg) translate(-350px) rotate(-150deg);
+	-moz-transform: rotate(150deg) translate(-350px) rotate(-150deg);
+	-ms-transform: rotate(150deg) translate(-350px) rotate(-150deg);
+}
+
+#deg180{
+	transform: rotate(180deg) translate(-350px) rotate(-180deg);
+	-webkit-transform: rotate(180deg) translate(-350px) rotate(-180deg);
+	-moz-transform: rotate(180deg) translate(-350px) rotate(-180deg);
+	-ms-transform: rotate(180deg) translate(-350px) rotate(-180deg);
+}
+
+#deg210{
+	transform: rotate(210deg) translate(-350px) rotate(-210deg);
+	-webkit-transform: rotate(210deg) translate(-350px) rotate(-210deg);
+	-moz-transform: rotate(210deg) translate(-350px) rotate(-210deg);
+	-ms-transform: rotate(210deg) translate(-350px) rotate(-210deg);
+}
+
+#deg240{
+	transform: rotate(240deg) translate(-350px) rotate(-240deg);
+	-webkit-transform: rotate(240deg) translate(-350px) rotate(-240deg);
+	-moz-transform: rotate(240deg) translate(-350px) rotate(-240deg);
+	-ms-transform: rotate(240deg) translate(-350px) rotate(-240deg);
+}
+
+#deg270{
+	transform: rotate(270deg) translate(-350px) rotate(-270deg);
+	-webkit-transform: rotate(270deg) translate(-350px) rotate(-270deg);
+	-moz-transform: rotate(270deg) translate(-350px) rotate(-270deg);
+	-ms-transform: rotate(270deg) translate(-350px) rotate(-270deg);
+}
+
+#deg300{
+	transform: rotate(300deg) translate(-350px) rotate(-300deg);
+	-webkit-transform: rotate(300deg) translate(-350px) rotate(-300deg);
+	-moz-transform: rotate(300deg) translate(-350px) rotate(-300deg);
+	-ms-transform: rotate(300deg) translate(-350px) rotate(-300deg);
+}
+
+#deg330{
+	transform: rotate(330deg) translate(-350px) rotate(-330deg);
+	-webkit-transform: rotate(330deg) translate(-350px) rotate(-330deg);
+	-moz-transform: rotate(330deg) translate(-350px) rotate(-330deg);
+	-ms-transform: rotate(330deg) translate(-350px) rotate(-330deg);
+}
+
+#deg360{
+	transform: rotate(360deg) translate(-350px) rotate(-360deg);
+	-webkit-transform: rotate(360deg) translate(-350px) rotate(-360deg);
+	-moz-transform: rotate(360deg) translate(-350px) rotate(-360deg);
+	-ms-transform: rotate(360deg) translate(-350px) rotate(-360deg);
+}
+
+#deg30{
+	transform: rotate(30deg) translate(-350px) rotate(-30deg);
+	-webkit-transform: rotate(30deg) translate(-350px) rotate(-30deg);
+	-moz-transform: rotate(30deg) translate(-350px) rotate(-30deg);
+	-ms-transform: rotate(30deg) translate(-350px) rotate(-30deg);
+}
+
+#deg60{
+	transform: rotate(60deg) translate(-350px) rotate(-60deg);
+	-webkit-transform: rotate(60deg) translate(-350px) rotate(-60deg);
+	-moz-transform: rotate(60deg) translate(-350px) rotate(-60deg);
+	-ms-transform: rotate(60deg) translate(-350px) rotate(-60deg);
+}
+
+.intern-bio {
+	width: 400px;
+	position: absolute;
+	left: calc(50% - 200px);
+	top: calc(50% - 135px/2); /*CHANGE THIS ONCE ALL BIOS ARE ADDED, USE DEG IDS*/
+	opacity: 0;
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+
+#intern-subheader {
+	font-size: 24px;
+	font-weight: 700;
+	border: 4px solid #fff;
+	padding: 5px;
+	display: inline-block;
+}
+
+#intern-info, .intern-text {
+	font-weight: 100;
+	line-height: 1.5;
+}
+
+#intern-info {
+	margin-top: 20px;
+}
+
+.intern-text {
+	margin-top: 10px;
+}
+
+#bio-sample {
+	top: calc(50% - 139px/2);
+	opacity: 1;
+	transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+
+.intern-name {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* end CSS for staff section */
+
+
+
+/* begin CSS for apply section */
+
+#apply-container {
+	width: 1000px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#apply-header {
+	transform: rotate(-90deg);
+	position: relative;
+	top: 108px;
+	color: #ED4E33;
+}
+
+#apply-description {
+    width: 800px;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    /* text-align: left; */
+    margin-bottom: 20px;
+}
+
+.apply-subheader {
+    font-size: 24px;
+    font-weight: 700;
+    color: #53626F;
+    margin-bottom: 10px;
+}
+
+.apply-text {
+    color: #53626F;
+    font-weight: 300;
+}
+
+.apply-lists {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    float: left;
+    width: 800px;
+    left: calc(50% - 400px + 20px);
+}
+
+ul {
+    margin-top: -5px;
+    padding: 0px 20px;
+}
+
+.apply-lists .apply-subheader {
+    font-size: 18px;
+}
+
+.apply-lists .apply-text {
+    font-size: 16px;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+#apply-info-container {
+	position: absolute;
+	top: 85px;
+}
+
+#apply-button {
+	color: #ED4E33;
+	font-size: 24px;
+	font-weight: 700;
+	border: 4px solid #ED4E33;
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    top: 835px;
+	left: calc(50% - 121px);
+}
+
+#apply-button:hover {
+	background-color: rgba(253,181,21,0.25);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* end CSS for apply section */
+
+
+
+/* begin CSS for connect section */
+
+#connect-wrapper {
+	height: 390px;
+	overflow: hidden;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	background-image: url("../../assets/img/connect-bg.jpg");
+	z-index: -4;
+	position: relative;
+	
+	top: 925;
+}
+
+#connect-overlay {
+	height: 100%;
+	overflow: hidden;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-image: url("../../assets/img/connect-overlay.png");
+  	opacity: .95;
+  	z-index: -2;
+  	position: relative;
+  	
+}
+
+#connect-header {
+opacity: 0.75;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+position: absolute;
+top: 100px;
+color: #fff;
+left: -97px;
+}
+
+#connect-container {
+position: absolute;
+top: 50px;
+color: #fff;
+width: 1000px;
+left: calc(50% - 500px);
+}
+
+#connect-content {
+position: absolute;
+/* top: 50px; */
+color: #fff;
+width: 860px;
+left: 120px;
+display: inline-block;
+}
+
+.connect-card {
+/* width: 280px; */
+display: inline-block;
+position: relative;
+float: left;
+margin-right: 50px;
+line-height: 1.5
+}
+
+#fb-logo {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.connect-subheader {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.connect-text {
+	font-weight: 100;
+}
+
+#office-subheader {
+	color: #00B0DA;
+}
+
+#partners-subheader {
+	color: #00B2A5;
+}
+
+#legal-subheader {
+	color: #ED4E33;
+}
+
+#fb-container {
+	text-align: top;
+}
+
+.office-link {
+	color: #fff;
+	font-weight: 500;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.office-link:hover {
+	color: #00B0DA;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.partners-link {
+	color: #fff;
+	font-weight: 500;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.partners-link:hover {
+	color: #00B2A5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
