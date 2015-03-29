@@ -536,9 +536,6 @@ a {
 
 #deg0 {
 	transform: translateY(-350px);
-	-webkit-transform: translateY(-350px);
-	-moz-transform: translateY(-350px);
-	-ms-transform: translateY(-350px);
 }
 
 #deg120{
@@ -679,9 +676,6 @@ a {
 
 #apply-header {
 	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
 	position: relative;
 	top: 108px;
 	color: #ED4E33;
