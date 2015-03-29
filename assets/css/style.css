@@ -651,12 +651,6 @@ a {
 	margin-top: 10px;
 }
 
-.intern-text a {
-	font-weight: 500;
-	color: #fff;
-	text-decoration: none;
-}
-
 #bio-sample {
 	top: calc(50% - 139px/2);
 	opacity: 1;
