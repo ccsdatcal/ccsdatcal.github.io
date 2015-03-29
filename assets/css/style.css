@@ -270,7 +270,7 @@ body {
 	font-size: 24px;
 	font-weight: 700;
 	border: 4px solid #003262;
-	padding: 5px 15px;
+	padding: 5px;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-transition: all 0.3s;
@@ -536,9 +536,6 @@ a {
 
 #deg0 {
 	transform: translateY(-350px);
-	-webkit-transform: translateY(-350px);
-	-moz-transform: translateY(-350px);
-	-ms-transform: translateY(-350px);
 }
 
 #deg120{
@@ -632,14 +629,14 @@ a {
 
 #intern-subheader {
 	font-size: 24px;
-	font-weight: 800;
+	font-weight: 700;
 	border: 4px solid #fff;
-	padding: 5px 15px;
+	padding: 5px;
 	display: inline-block;
 }
 
 #intern-info, .intern-text {
-	font-weight: 300;
+	font-weight: 100;
 	line-height: 1.5;
 }
 
@@ -649,12 +646,6 @@ a {
 
 .intern-text {
 	margin-top: 10px;
-}
-
-.intern-text a {
-	font-weight: 500;
-	color: #fff;
-	text-decoration: none;
 }
 
 #bio-sample {
@@ -685,9 +676,6 @@ a {
 
 #apply-header {
 	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
 	position: relative;
 	top: 108px;
 	color: #ED4E33;
@@ -750,7 +738,7 @@ li {
 	font-size: 24px;
 	font-weight: 700;
 	border: 4px solid #ED4E33;
-	padding: 5px 15px;
+	padding: 5px;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-transition: all 0.3s;
@@ -760,7 +748,7 @@ li {
     transition: all 0.3s;
     position: absolute;
     top: 835px;
-	left: calc(50% - 131px);
+	left: calc(50% - 121px);
 }
 
 #apply-button:hover {
